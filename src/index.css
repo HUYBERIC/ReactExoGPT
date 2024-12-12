@@ -1,0 +1,132 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f; /* Tech dark background */
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #ffb6c1; /* Pale pink for headers */
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+input, button {
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+input {
+  background-color: #2a2a3d; /* Subtle tech background */
+  color: #ffffff;
+  border: 1px solid #ffb6c1;
+  width: 100%;
+  max-width: 300px;
+}
+
+input:focus {
+  border-color: #ff9ead;
+  background-color: #353547;
+}
+
+button {
+  background-color: #ffb6c1; /* Pale pink button */
+  color: #1e1e2f; /* Contrast */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9ead; /* Slightly darker pink on hover */
+}
+
+button:active {
+  background-color: #e699a3;
+}
+
+div {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #2a2a3d; /* Slightly lighter than the body */
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific styles for components */
+h2 + div {
+  border: 1px solid #3a3a50;
+}
+
+/* Exercice-specific styles */
+.ex6, .ex7, .ex8 {
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul li {
+  background-color: #3a3a50; /* Subtle background for items */
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  background-color: transparent;
+  color: #ffb6c1;
+  border: 1px solid #ffb6c1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+ul li button:hover {
+  background-color: #ffb6c1;
+  color: #1e1e2f;
+}
+
+/* Loader */
+p {
+  font-style: italic;
+  color: #ffb6c1;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  div {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input, button {
+    width: 100%;
+    max-width: none;
+  }
+}
